@@ -3,7 +3,7 @@
 </p>
 
 
-# Teslo API
+# Teslo API Nest TS + PostgreSQL
 
 1. Clonar el proyecto
 
