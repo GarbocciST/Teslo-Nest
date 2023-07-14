@@ -18,10 +18,10 @@ export class ProductsController {
     return this.productsService.findAll( paginationDto );
   }
 
-  @Get(':id')
-  async findOne(@Param('id', ParseUUIDPipe) id: string) {
+  @Get(':term')
+  async findOne(@Param('term') term: string) {
 
-    const product = await this.productsService.findOne(id);
+    const product = await this.productsService.findOne(term);
 
     return product;
   }
