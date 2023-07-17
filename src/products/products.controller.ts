@@ -21,7 +21,7 @@ export class ProductsController {
   @Get(':term')
   async findOne(@Param('term') term: string) {
 
-    const product = await this.productsService.findOne(term);
+    const product = await this.productsService.findOnePlain(term);
 
     return product;
   }
